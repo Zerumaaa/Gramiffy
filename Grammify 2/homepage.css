@@ -1,0 +1,45 @@
+.title{
+    padding: 30px 0;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: "Pacifico", cursive;
+}
+
+.navOptions li{
+    list-style-type: none;
+    text-decoration: none;
+    padding-top: 30px;
+}
+.navOptions a{
+    text-decoration: none;
+    color: white;
+}
+
+.More{
+    margin-top: 300px;
+}
+
+.Story{
+    margin-top: 20px;
+    position: absolute;
+    width: 1100px;
+    height: 100px;
+    display: flex;
+    overflow: auto;
+    left: 350px;
+    background-color: rgb(0, 0, 0);
+}
+
+.Story::-webkit-scrollbar {
+    display: none;
+}
+
+.Story img{
+    border-radius: 50%;
+    width: 100px;
+    padding: 5px;
+    border: 2px solid white;
+    margin-left: 10px;
+    margin-right: 10px;
+    object-fit: cover;
+}
