@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    font-family: sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.text{
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.text2 {
+    color: black;
+    font-weight: bold;
+}
+
+.page{
+width: 350px;
+text-transform: capitalize;
+background-color: #fff;
+border-radius: 5px;
+padding-bottom: 25px;
+padding-left: 20px;
+padding-right: 20px;
+}
+.title{
+padding: 30px 0;
+text-transform: capitalize;
+font-size: 25px;
+font-family: "Pacifico", cursive;
+}
+
+
+.fblink{
+margin-top: 15px;
+width: 100%;
+margin-bottom: 30px;
+}
+.fblink span{
+font-size: 18px;
+color: #021897;
+margin-right: 5px;
+}
+.fblink a{
+text-decoration: none;
+font-weight: bold;
+color: #021897;
+
+}
+
+
+.option{
+color: #5a5a5a;
+margin: 10px 0;
+font-weight: bold;
+position: relative;
+}
+
+.option::before{
+position: absolute;
+content: '';
+width: 37%;
+height: 2px;
+background: #b6b6b6;
+left: 0;
+top: 50%;
+transform: translateY(-50);
+border-radius: 50px;
+}
+
+.option::after{
+position: absolute;
+content: '';
+width: 37%;
+height: 2px;
+background: #b6b6b6;
+right: 0;
+top: 50%;
+transform: translateY(-50);
+border-radius: 50px;
+}
+
+form {
+width: 75%;
+display: flex;
+flex-direction: column;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+}
+
+form input{
+margin-bottom: 20px;
+border: 1px solid rgba(0,0,0,0.4);
+border-radius: 3px;
+outline: none;
+}
+
+form input:focus{
+border: 1px solid rgba(0,0,0,0.7);
+background:#efefef;
+}
+
+input[type="text"], input[type="fullname"], input[type="username"], input[type="password"] {
+padding-left: 10px;
+position:relative;
+height: 35px;
+font-size: 15px;
+}
+
+input::placeholder{
+font-weight: normal;
+font-size: 15px;
+transition: 0.3s ease;
+}
+
+input:focus::placeholder{
+position: absolute;
+font-size: 10px;
+transform: translateY(-9px);
+}
+
+form p{
+color: black;
+letter-spacing: 1px;
+margin: 10px;
+font-weight: lighter;
+}
+
+form a{
+text-transform: capitalize;
+letter-spacing: 1px;
+transform: scale(0.995);
+color: #fff;
+
+}
+form  button{
+border: none;
+height: 35px;
+background: #043fff;
+padding: 5px;
+margin-top: 5px;
+color: #fff;
+border-radius: 3px;
+font-weight: bold;
+text-transform: capitalize;
+letter-spacing: 1px;
+outline: none;
+cursor: pointer;
+}
+
+form button:active{
+background: #2c58fe;
+transform: scale(0.995);
+}
