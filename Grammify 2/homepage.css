@@ -1,8 +1,13 @@
 .title{
+    margin-left: 30px;
     padding: 30px 0;
     text-transform: capitalize;
     font-size: 25px;
     font-family: "Pacifico", cursive;
+}
+
+.fixed{
+    position: fixed;
 }
 
 .navOptions li{
@@ -22,11 +27,11 @@
 .Story{
     margin-top: 20px;
     position: absolute;
-    width: 1100px;
+    width: 850px;
     height: 100px;
     display: flex;
-    overflow: auto;
-    left: 350px;
+   overflow: auto;
+    left: 550px;
     background-color: rgb(0, 0, 0);
 }
 
@@ -42,4 +47,174 @@
     margin-left: 10px;
     margin-right: 10px;
     object-fit: cover;
+
+}
+
+.Newsfeed{
+    background: #fff;color: aliceblue;
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+    left: 350px;
+    
+}
+
+.newsfeed{
+    padding-top: 18%;
+    padding-left: 18%;
+}
+
+.usercontainer1{
+    display: flex;
+    align-items: center;
+}
+
+.user1{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-left: 80px;
+    float: left;
+    border: 2px solid white;
+    object-fit: cover;
+    padding :2px;
+
+}
+
+.user1name{
+    font: bold;
+    color: white;
+    float: left;
+    padding-left: 25px;
+    padding-top: 8px;
+    font-size: 18px;
+}
+
+.songname1{
+    color: white;
+    float: left;
+    margin-left: -80px;
+}
+
+.post1{
+    margin-top: 20px;
+    margin-left: 130px;
+    width: 630px;
+    height: 680px;
+    background-color: white;
+}
+
+.post1 img {
+    margin-left: 80px;
+    margin-top: 100px;
+    width: 480px;
+    height: 480px;
+}
+
+.dots1{
+    margin-left: 500px;
+    margin-top: -37px;
+}
+
+
+
+.usercontainer2{
+    display: flex;
+    align-items: center;
+    
+}
+
+.user2{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-left: 80px;
+    float: left;
+    border: 2px solid white;
+    object-fit: cover;
+    padding :2px;
+    margin-top: 50px;
+
+}
+
+.user2name{
+    font: bold;
+    color: white;
+    float: left;
+    padding-left: 25px;
+    padding-top: 8px;
+    font-size: 18px;
+    margin-top: 50px;
+
+    
+}
+
+.songname2{
+    color: white;
+    float: left;
+    margin-left: -70px;
+    margin-top: 50px;
+
+}
+
+.post2{
+    margin-top: 20px;
+    margin-left: 130px;
+    width: 630px;
+    height: 680px;
+    background-color: white;
+}
+
+.post2 img {
+    margin-left: 80px;
+    margin-top: 100px;
+    width: 480px;
+    height: 480px;
+}
+
+.dots2{
+    margin-left: 500px;
+    margin-top: -37px;
+    margin-top: 37px;
+
+}
+
+.rightcolumn {
+    color: white;
+    margin-left: 77%;
+    margin-top: -1000px;
+}
+
+.sideuser {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 2px solid white;
+    float: left;
+    margin-top: -975px;
+}
+
+.sideusername {
+    font: bold;
+    color: white;
+    float: left;
+    padding-left: 65px;
+    margin-top: -970px;
+    font-size: 18px;
+}
+
+.sidename {
+    float: left;
+    margin-left: 65px;
+    margin-top: -950px;
+}
+
+.suggested-fy {
+    margin-top: -670px;
+}
+
+.see-all {
+    margin-top: -33px;
+    margin-left: 300px;
 }
