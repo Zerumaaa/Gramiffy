@@ -10,6 +10,10 @@
     position: fixed;
 }
 
+.fixed .navOptions li:hover {
+    transform: scale(1.1);
+}
+
 .navOptions li{
     list-style-type: none;
     text-decoration: none;
@@ -24,30 +28,91 @@
     margin-top: 300px;
 }
 
-.Story{
-    margin-top: 20px;
-    position: absolute;
-    width: 850px;
-    height: 100px;
-    display: flex;
-   overflow: auto;
-    left: 550px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.asdd{
+    min-height: 0vh;
+    display: grid;
+    align-content: top;
+    justify-content: center;
     background-color: rgb(0, 0, 0);
+    place-items: center;
+    color: rgb(51, 51, 51);
 }
 
-.Story::-webkit-scrollbar {
-    display: none;
+.container{
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(4, 4, 4);
+    padding: 2rem;
+    width: 71%;
+    margin-top: 20px;
+    margin-left: 10%;
 }
 
-.Story img{
+.story-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 5rem;
+    grid-gap: 2rem;
+}
+.story-container .content {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease-in;
+}
+
+.story-container .content:hover {
+    transform: scale(1.1);
+}
+
+.story-container .content .image-container {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    width: 100px;
-    padding: 5px;
-    border: 2px solid white;
-    margin-left: 10px;
-    margin-right: 10px;
-    object-fit: cover;
+    background: radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
+    radial-gradient(white 65%, transparent 0),
+    linear-gradient(to top right, orange, deeppink);
+}
 
+.story-container .content .image-container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: circle(42%);
+}
+
+.story-container .content:last-child::after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 100%;
+    right: -2rem;
+}
+
+.story-container .content .text-container{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
 }
 
 .Newsfeed{
@@ -60,8 +125,9 @@
 }
 
 .newsfeed{
-    padding-top: 18%;
-    padding-left: 18%;
+    padding-top: 5%;
+    padding-left: 25%;
+    
 }
 
 .usercontainer1{
