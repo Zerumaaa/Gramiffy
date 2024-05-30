@@ -36,3 +36,12 @@
     place-items: center;
     color: rgb(51, 51, 51);
 }
+#pfp{
+    position: relative !important;
+    width: 10rem;
+    height: 10rem;
+    background: rgb(255, 128, 0);
+    border: rgb(144, 201, 255) 2px solid;
+    border-radius: 100px;
+
+}
